@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 70vh);
+  gap: 4rem;
+  padding-bottom: calc(4 * 1.5rem);
+  margin-bottom: 4vw;
+}
+
+.card {
+  position: sticky;
+  top: 100px;
+  padding-top: calc(var(--index) * 1.5rem);
+  border-radius: 50px;
+}
+
+.cardBody {
+  box-sizing: border-box;
+  padding: 30px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
