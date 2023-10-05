@@ -1,26 +1,30 @@
+import Image from "next/image";
 import styles from "./projects.module.css";
+import Link from "next/link";
 
 const Projects = () => {
-  const proj = [1, 2, 3, 4];
+  const proj = [1, 2];
 
-  const stylesMap = {
-    1: { backgroundColor: "#52b2cf" },
-    2: { backgroundColor: "#e5a36f" },
-    3: { backgroundColor: "#9cadce" },
-    4: { backgroundColor: "#d4afb9" },
-  };
   return (
     <div className={styles.container}>
+      <h2 className={styles.projectTitle}>Projects</h2>
+      <p className={styles.projectSubtitle}>
+        Some of the projects are from work and some are on my own time.
+      </p>
       <ul className={styles.cards}>
         {proj.map((num) => (
-          <li
-            className={styles.card}
-            key={`card${num}`}
-            style={stylesMap[num]}
-            id={`card${num}`}
-          >
+          <li className={styles.card} key={`card${num}`} id={`card${num}`}>
             <div className={styles.cardBody}>
-              <h2>Card {num}</h2>
+              <Link
+                href="https://my-blog-zeta-virid.vercel.app/"
+                target="_blank"
+              >
+                <Image
+                  fill
+                  src={"/images/blog.png"}
+                  alt="Picture of blog project"
+                />
+              </Link>
             </div>
           </li>
         ))}
