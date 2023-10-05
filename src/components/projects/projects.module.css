@@ -3,6 +3,16 @@
   margin: 0 auto;
 }
 
+.projectTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectSubtitle {
+  margin-bottom: 2rem;
+  color: #a1a1a1;
+}
+
 .cards {
   list-style: none;
   padding-left: 0;
@@ -17,16 +27,17 @@
 .card {
   position: sticky;
   top: 100px;
-  padding-top: calc(var(--index) * 1.5rem);
   border-radius: 50px;
 }
 
 .cardBody {
   box-sizing: border-box;
-  padding: 30px;
+  /* padding: 30px; */
   height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  border: 1px solid red;
 }
