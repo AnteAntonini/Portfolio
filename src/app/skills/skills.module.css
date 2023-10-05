@@ -1,0 +1,50 @@
+.skillTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skillList {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills {
+  opacity: 0;
+  animation: fadeInFromX 1s ease forwards;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillName {
+  padding-top: 0.5rem;
+}
+
+@keyframes fadeInFromX {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .skillList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .mobileIcons {
+    width: 50px;
+    height: 50px;
+  }
+}
