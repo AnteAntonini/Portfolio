@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  max-height: calc(100vh - 17rem);
+}
+
+.projectTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectSubtitle {
+  margin-bottom: 2rem;
+  color: #a1a1a1;
+}
+
+.projectsLeft {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  margin-right: 3rem;
+}
+
+.projectsRight {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.projectsRow {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.projectsRow:hover ~ .projectsLeft {
+  opacity: 1;
+}
+
+.projectsRow > .projectsSelectedWrapper > .projectsSelected {
+  transform: translateX(-100%) translateZ(0px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.projectsRow > .projectsTitle {
+  transform: none;
+  white-space: nowrap;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectsRow:hover > .projectsSelectedWrapper > .projectsSelected {
+  transform: translateX(0%) translateZ(0px);
+  opacity: 1;
+}
+
+.projectsRow:hover > .projectsTitle {
+  transform: translateX(24px) translateZ(0px);
+}
+
+.projectsImageInactive {
+  opacity: 0;
+}
+
+.projectsImageActive {
+  border-top-right-radius: 40px;
+  animation: fadeIn 1s ease-in;
+}
+
+.projectsSelected {
+  opacity: 0;
+  transform: translateX(-100%) translateZ(0px);
+  position: relative;
+}
+
+.projectsTitle {
+  transform: none;
+  white-space: nowrap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
