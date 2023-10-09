@@ -17,7 +17,7 @@ const Skills = () => {
             <div className={styles.skill}>
               <Image
                 className={styles.mobileIcons}
-                src={`${technology.icon}.svg`}
+                src={`icons/${technology.icon}.svg`}
                 width={100}
                 height={100}
                 alt="software technology"
