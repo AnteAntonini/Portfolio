@@ -11,11 +11,11 @@ const About = () => {
         </p>
         <p>
           My main points of interest are on the frontend, specializing in
-          React.js.
+          React.js and TypeScript.
         </p>
         <p>
-          My skillset includes engineering complex UI-s, TypeScript, as well as
-          unit testing.
+          My skillset includes engineering UI-s, implementing complex logic, as
+          well as unit testing.
         </p>
         <p>
           What truly excites me about this field is its ever-evolving nature.
@@ -28,7 +28,7 @@ const About = () => {
           Outside of programming, I enjoy reading and working out. I am
           immensely interested in mental and physical performance which I relate
           to my overall productivity and health. Constantly learning, being
-          useful and creative are the principles I live by.
+          useful and 1% better every day are the principles I live by.
         </p>
         <p>
           You can find me on{" "}
