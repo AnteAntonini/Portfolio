@@ -8,6 +8,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [show, setShow] = useState(false);
 
+  const navbarMenuLinks = ["Skills", "Projects", "Blog", "About"];
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -30,10 +32,9 @@ const Navbar = () => {
         Ante Antonini
       </Link>
       <div className={styles.navbarMenuLinks}>
-        <Link href={"/skills"}>Skills</Link>
-        <Link href={"/projects"}>Projects</Link>
-        <Link href={"/"}>Blog</Link>
-        <Link href={"/about"}>About</Link>
+        {navbarMenuLinks.map((link) => (
+          <Link href={`/${link.toLowerCase()}`}>{link}</Link>
+        ))}
       </div>
       <div
         className={`${styles.hamburger} ${show && styles.active}`}
@@ -50,19 +51,11 @@ const Navbar = () => {
         }`}
         onClick={() => setShow(!show)}
       >
-        <li>
-          <Link href={"/skills"}>Skills</Link>
-        </li>
-
-        <li>
-          <Link href={"/projects"}>Projects</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Blog</Link>
-        </li>
-        <li>
-          <Link href={"/about"}>About</Link>
-        </li>
+        {navbarMenuLinks.map((link) => (
+          <li>
+            <Link href={`/${link.toLowerCase()}`}>{link}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
