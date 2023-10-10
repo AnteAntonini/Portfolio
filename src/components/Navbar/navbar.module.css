@@ -6,7 +6,6 @@
   background: transparent;
   backdrop-filter: blur(8px);
   position: fixed;
-  transition: background 0.2s ease;
   z-index: 50;
   display: flex;
   justify-content: space-between;
@@ -65,14 +64,15 @@
 }
 
 @media screen and (max-width: 720px) {
+  .navbar {
+    padding: 2rem 2.5rem;
+  }
   .navbarMenuLinks {
     display: none;
   }
   .hamburger {
     display: flex;
   }
-
-  /* navbar.active*/
 
   .active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -88,5 +88,17 @@
 
   body.active {
     overflow: hidden;
+  }
+
+  .mobileNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  .mobileNavigation li {
+    padding: 1rem;
+    font-size: 2rem;
   }
 }
