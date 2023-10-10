@@ -48,11 +48,21 @@ const Navbar = () => {
         className={`${
           show ? styles.mobileNavigation : styles.hideMobileNavigation
         }`}
+        onClick={() => setShow(!show)}
       >
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Blog</li>
-        <li>About</li>
+        <li>
+          <Link href={"/skills"}>Skills</Link>
+        </li>
+
+        <li>
+          <Link href={"/projects"}>Projects</Link>
+        </li>
+        <li>
+          <Link href={"/"}>Blog</Link>
+        </li>
+        <li>
+          <Link href={"/about"}>About</Link>
+        </li>
       </ul>
     </nav>
   );
