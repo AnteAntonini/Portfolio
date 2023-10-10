@@ -44,7 +44,7 @@ const Projects = () => {
         <div className={styles.projectsRight}>
           <ul className={styles.cards}>
             {projTitles.map((title, index) => (
-              <li key={index}>
+              <li key={index} style={{ animationDelay: `${index * 200}ms` }}>
                 <Link href="/">
                   <div
                     className={styles.projectsRow}
