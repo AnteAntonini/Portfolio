@@ -43,6 +43,20 @@
 .navbarMenuLinks a {
   padding: 1rem;
   font-weight: 500;
+  line-height: 2rem;
+}
+
+.navbarMenuLinks a::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid gray;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+
+.navbarMenuLinks a:hover::after {
+  transform: scaleX(1);
 }
 
 .mobileNavigation {
