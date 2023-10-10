@@ -6,7 +6,7 @@
 .projects {
   height: 100vh;
   display: flex;
-  max-height: calc(100vh - 17rem);
+  max-height: calc(100vh - 16.6rem);
 }
 
 .projectTitle {
@@ -45,7 +45,7 @@
 }
 
 .projectsRow > .projectsSelectedWrapper > .projectsSelected {
-  transform: translateX(-100%) translateZ(0px);
+  transform: translateX(-100%);
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -57,12 +57,12 @@
 }
 
 .projectsRow:hover > .projectsSelectedWrapper > .projectsSelected {
-  transform: translateX(0%) translateZ(0px);
+  transform: translateX(0%);
   opacity: 1;
 }
 
 .projectsRow:hover > .projectsTitle {
-  transform: translateX(24px) translateZ(0px);
+  transform: translateX(24px);
 }
 
 .projectsImageInactive {
@@ -76,7 +76,7 @@
 
 .projectsSelected {
   opacity: 0;
-  transform: translateX(-100%) translateZ(0px);
+  transform: translateX(-100%);
   position: relative;
 }
 
