@@ -93,3 +93,17 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .projectsLeft {
+    display: none;
+  }
+
+  .projectsRight {
+    width: 100%;
+  }
+
+  .projectsSelectedWrapper {
+    display: none;
+  }
+}
