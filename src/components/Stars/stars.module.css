@@ -36,3 +36,12 @@
     -15vw 60vh 0px 0px #fff, -40vw 50vh 0px 0px #fff, 0vw 55vh 1px 1px #fff;
   animation: zoom 10s alternate infinite;
 }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
