@@ -1,5 +1,6 @@
 :root {
   --color-primary-blue: #60a5fa;
+  --color-primary-dark: #1a1919;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
 
 body {
   padding: 10rem 5rem 0 5rem;
-  background-color: #1d1c1cba;
+  background-color: var(--color-primary-dark);
 }
 
 a {
