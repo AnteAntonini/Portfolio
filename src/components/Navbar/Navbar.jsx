@@ -32,8 +32,10 @@ const Navbar = () => {
         Ante Antonini
       </Link>
       <div className={styles.navbarMenuLinks}>
-        {navbarMenuLinks.map((link) => (
-          <Link href={`/${link.toLowerCase()}`}>{link}</Link>
+        {navbarMenuLinks.map((link, index) => (
+          <Link key={index} href={`/${link.toLowerCase()}`}>
+            {link}
+          </Link>
         ))}
       </div>
       <div
@@ -51,8 +53,8 @@ const Navbar = () => {
         }`}
         onClick={() => setShow(!show)}
       >
-        {navbarMenuLinks.map((link) => (
-          <li>
+        {navbarMenuLinks.map((link, index) => (
+          <li key={index}>
             <Link href={`/${link.toLowerCase()}`}>{link}</Link>
           </li>
         ))}
