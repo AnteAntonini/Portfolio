@@ -19,10 +19,10 @@ const About = () => {
         </p>
         <p>
           What truly excites me about this field is its ever-evolving nature.
-          I'm a staunch advocate for lifelong learning and make it a point to
-          stay abreast of the latest industry trends, best practices, and
-          emerging technologies. This commitment to continuous improvement fuels
-          my aspiration to become a better developer with each passing day.
+          I&apos;m an advocate for lifelong learning and make it a point to stay
+          abreast of the latest industry trends, best practices, and emerging
+          technologies. This commitment to continuous improvement fuels my
+          aspiration to become a better developer with each passing day.
         </p>
         <p>
           Outside of programming, I enjoy reading and working out. I am
