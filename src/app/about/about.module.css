@@ -2,7 +2,6 @@
   min-height: 100vh;
   max-width: 764px;
   margin: 0 auto;
-  animation: dropFromTheTop 1s ease forwards;
   padding-bottom: 5rem;
 }
 
@@ -20,17 +19,4 @@
 
 .about a {
   color: var(--color-primary-blue);
-}
-
-@keyframes dropFromTheTop {
-  from {
-    opacity: 0;
-    filter: blur(8px);
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
 }

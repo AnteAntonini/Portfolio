@@ -20,7 +20,7 @@ const Projects = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} dropFromTopAnimation`}>
       <h2 className={styles.projectTitle}>Projects</h2>
       <p className={styles.projectSubtitle}>
         Some of the projects are from work and some are on my own time.
@@ -35,7 +35,7 @@ const Projects = () => {
               alt="Project image screenshot"
               className={
                 isHovered
-                  ? styles.projectsImageActive
+                  ? `${styles.projectsImageActive} fadeInAnimationShort`
                   : styles.projectsImageInactive
               }
             />
@@ -44,7 +44,11 @@ const Projects = () => {
         <div className={styles.projectsRight}>
           <ul className={styles.cards}>
             {projTitles.map((title, index) => (
-              <li key={index} style={{ animationDelay: `${index * 200}ms` }}>
+              <li
+                key={index}
+                className="dropFromTopAnimation"
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
                 <Link href="/">
                   <div
                     className={styles.projectsRow}

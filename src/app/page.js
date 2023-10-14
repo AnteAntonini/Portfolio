@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Stars />
-      <h1 className={styles.introText}>
+      <h1 className={`${styles.introText} fadeInAnimation`}>
         Nice to meet you! <br />
         I'm <span className={styles.introName}>Ante </span>
         <span className={styles.introName}>Antonini</span> <br />
