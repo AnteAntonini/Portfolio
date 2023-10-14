@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ weight: ["400", "500"], subsets: ["latin"] });
+const inter = Inter({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio App",
