@@ -6,7 +6,9 @@
 .projects {
   height: 100vh;
   display: flex;
-  max-height: calc(100vh - 16.8rem);
+  max-height: calc(
+    100vh - 16.8rem
+  ); /* subtract height of all content above .projects*/
 }
 
 .projectTitle {
