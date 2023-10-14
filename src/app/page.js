@@ -7,7 +7,8 @@ export default function Home() {
       <Stars />
       <h1 className={`${styles.introText} fadeInAnimation`}>
         Nice to meet you! <br />
-        I'm <span className={styles.introName}>Ante </span>
+        I&apos;m
+        <span className={styles.introName}> Ante </span>
         <span className={styles.introName}>Antonini</span> <br />
         <span>Frontend Developer.</span>
       </h1>
