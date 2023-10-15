@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <div className={`${styles.container} dropFromTopAnimation`}>
-      <h2 className={styles.projectTitle}>Projects</h2>
+      <h2 className={styles.sectionTitle}>Projects</h2>
       <p className={styles.projectSubtitle}>
         Some of the projects are from work and some are on my own time.
       </p>
