@@ -6,7 +6,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Projects = () => {
-  const projTitles = ["portfolio", "blog"];
+  const projects = [
+    {
+      title: "portfolio",
+      url: "/",
+    },
+    {
+      title: "blog",
+      url: "https://my-blog-zeta-virid.vercel.app/",
+    },
+  ];
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredProject, setHoveredProject] = useState(false);
 
@@ -43,22 +52,22 @@ const Projects = () => {
         </div>
         <div className={styles.projectsRight}>
           <ul className={styles.cards}>
-            {projTitles.map((title, index) => (
+            {projects.map((project, index) => (
               <li
                 key={index}
                 className="dropFromTopAnimation"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <Link href="/">
+                <Link href={project.url}>
                   <div
                     className={styles.projectsRow}
-                    onMouseEnter={(e) => handleHover(e, title)}
+                    onMouseEnter={(e) => handleHover(e, project.title)}
                     onMouseLeave={(e) => handleMouseLeave(e)}
                   >
                     <div className={styles.projectsSelectedWrapper}>
                       <h4 className={styles.projectsSelected}>→</h4>
                     </div>
-                    <h4 className={styles.projectsTitle}>{title}</h4>
+                    <h4 className={styles.projectsTitle}>{project.title}</h4>
                   </div>
                 </Link>
               </li>
