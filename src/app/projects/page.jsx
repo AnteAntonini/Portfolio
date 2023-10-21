@@ -8,18 +8,26 @@ import { useState } from "react";
 const Projects = () => {
   const projects = [
     {
-      title: "portfolio",
+      title: "Portfolio (this app)",
+      key: "portfolio",
       url: "/",
     },
     {
-      title: "blog",
+      title: "Blog",
+      key: "blog",
       url: "https://my-blog-zeta-virid.vercel.app/",
+    },
+    {
+      title: "City Hotel",
+      key: "city-hotel",
+      url: "https://www.city-hotel.hr/",
     },
   ];
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredProject, setHoveredProject] = useState(false);
 
   const handleHover = (e, project) => {
+    console.log("project", project);
     setHoveredProject(project);
     setIsHovered(true);
   };
@@ -54,14 +62,14 @@ const Projects = () => {
           <ul className={styles.cards}>
             {projects.map((project, index) => (
               <li
-                key={index}
+                key={project.key}
                 className="dropFromTopAnimation"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <Link href={project.url}>
                   <div
                     className={styles.projectsRow}
-                    onMouseEnter={(e) => handleHover(e, project.title)}
+                    onMouseEnter={(e) => handleHover(e, project.key)}
                     onMouseLeave={(e) => handleMouseLeave(e)}
                   >
                     <div className={styles.projectsSelectedWrapper}>
