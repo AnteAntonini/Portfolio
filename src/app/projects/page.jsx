@@ -4,25 +4,9 @@ import Image from "next/image";
 import styles from "./projects.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { projects } from "../../constants/projects";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Portfolio (this app)",
-      key: "portfolio",
-      url: "/",
-    },
-    {
-      title: "Blog",
-      key: "blog",
-      url: "https://my-blog-zeta-virid.vercel.app/",
-    },
-    {
-      title: "City Hotel",
-      key: "city-hotel",
-      url: "https://www.city-hotel.hr/",
-    },
-  ];
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredProject, setHoveredProject] = useState(false);
 
