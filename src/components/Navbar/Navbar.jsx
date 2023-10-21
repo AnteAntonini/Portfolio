@@ -8,7 +8,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [show, setShow] = useState(false);
 
-  const navbarMenuLinks = ["Skills", "Projects", "Blog", "About"];
+  const navbarMenuLinks = ["Skills", "Projects", "About"];
 
   useEffect(() => {
     const handleScroll = () => {
