@@ -28,7 +28,11 @@ const Navbar = () => {
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? `${styles.scrolled}` : ""}`}>
-      <Link href={"/"} className={styles.navbarTitle}>
+      <Link
+        href={"/"}
+        className={styles.navbarTitle}
+        onClick={() => setShow(!show)}
+      >
         Ante Antonini
       </Link>
       <div className={styles.navbarMenuLinks}>
