@@ -31,7 +31,7 @@ const Navbar = () => {
       <Link
         href={"/"}
         className={styles.navbarTitle}
-        onClick={() => setShow(!show)}
+        onClick={() => show && setShow(!show)}
       >
         Ante Antonini
       </Link>
