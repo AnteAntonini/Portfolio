@@ -6,7 +6,7 @@ const About = () => {
       <h1>About me</h1>
       <div>
         <p>
-          Hi, I am Ante Antonini, a software engineer working at Combis.
+          Hi, I am Ante Antonini, a software engineer working at Dotmetrics.
           Currently based in Metković, Croatia.
         </p>
         <p>
