@@ -15,7 +15,8 @@ const About = () => {
           Lit.dev and TypeScript.
         </p>
         <p>
-          My skillset includes engineering UI-s, implementing complex logic.
+          My skillset includes engineering UI-s, implementing reusable
+          components and complex logic.
         </p>
         <p>
           What truly excites me about this field is its ever-evolving nature.
