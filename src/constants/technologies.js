@@ -24,6 +24,10 @@ export const technologies = [
     icon: "vue",
   },
   {
+    name: "Lit.dev",
+    icon: "lit",
+  },
+  {
     name: "Storybook",
     icon: "storybook",
   },

@@ -11,11 +11,11 @@ const About = () => {
         </p>
         <p>
           My main points of interest are on the frontend, specializing in
-          React.js and TypeScript.
+          JavaScript and various frameworks and libraries such as React.js, Vue,
+          Lit.dev and TypeScript.
         </p>
         <p>
-          My skillset includes engineering UI-s, implementing complex logic, as
-          well as unit testing.
+          My skillset includes engineering UI-s, implementing complex logic.
         </p>
         <p>
           What truly excites me about this field is its ever-evolving nature.
